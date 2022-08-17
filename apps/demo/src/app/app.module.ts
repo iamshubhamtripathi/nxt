@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { RouterModule, Routes } from "@angular/router";
 import { loadRemoteModule } from '@angular-architects/module-federation';
+import { environment } from '../environments/environment';
 
 // const routes: Routes =[
 //   {
@@ -16,7 +17,8 @@ const routes: Routes = [
   {
     path: 'microfrontend',
     loadChildren: () => loadRemoteModule({
-      remoteEntry: "https://sprightly-capybara-9fa7d5.netlify.app/remoteEntry.js",
+      //remoteEntry: "https://inquisitive-tiramisu-ef621c.netlify.app/remoteEntry.js",
+      remoteEntry: environment.remoteUrl,
       type: 'module',
       exposedModule: './Module'
     })

@@ -2,7 +2,6 @@ const ModuleFederationPlugin = require("webpack/lib/container/ModuleFederationPl
 const mf = require("@angular-architects/module-federation/webpack");
 const path = require("path");
 const share = mf.share;
-const environment = require("./src/environments/environment");
 
 const sharedMappings = new mf.SharedMappings();
 sharedMappings.register(
