@@ -30,7 +30,7 @@ module.exports = {
 
         // leave this empty to have dynamic module federation:
         remotes: {
-          remote: 'https://inquisitive-tiramisu-ef621c.netlify.app/remoteEntry.js',
+          remote: 'https://sprightly-capybara-9fa7d5.netlify.app/remoteEntry.js',
         },
 
         shared: share({
