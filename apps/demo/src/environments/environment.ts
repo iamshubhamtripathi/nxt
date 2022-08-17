@@ -4,6 +4,7 @@
 
 export const environment = {
   production: false,
+  remoteUrl: "http://localhost:4201/remoteEntry.js"
 };
 
 /*
